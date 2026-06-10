@@ -1,9 +1,9 @@
 resource "null_resource" "ansible" {
   provisioner "remote-exec" {
     connection {
-      type = "ssh"
-      host = "var.public_ip"
-      user = "ec2-user"
+      type     = "ssh"
+      host     = "var.public_ip"
+      user     = "ec2-user"
       password = "DevOps321"
     }
 
